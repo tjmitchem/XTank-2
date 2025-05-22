@@ -4,6 +4,9 @@ public partial class Tank : RigidBody2D
 	[Export]
 	private int rotation_steps = 10;
 	
+	[Export]
+	private int speed_multiplier = 50;
+
 	private int speed = 0;
 	private Vector2 target;
 	private float target_rotation = 0.0f;
@@ -34,7 +37,7 @@ public partial class Tank : RigidBody2D
 		if (keycode == 96) { // Numpad 0 or "`"
 			return 0;
 		} else {
-			return (50 * (keycode - 48));
+			return (speed_multiplier * (keycode - 48));
 		}
 	}
 
@@ -51,7 +54,6 @@ public partial class Tank : RigidBody2D
 			if (rotation_counter == 0)
 			{
 				rotating = false;
-				rotation_counter = rotation_steps;
 			}
 		}
 

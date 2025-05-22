@@ -97,6 +97,7 @@ gravity_scale = 0.0
 linear_damp = 1.0
 angular_damp = 41.242
 script = ExtResource("1_ppyta")
+speed_multiplier = 40
 metadata/_edit_group_ = true
 
 [node name="sprite" type="Sprite2D" parent="tank"]
