@@ -1,0 +1,6 @@
+# This is a CODEOWNERS file to restrict pull request approvals to repo owner
+
+# These owners will be the default owners for everything in the repository
+# The syntax is:
+# files/paths    owner(s)
+*    @tjmitchem
