@@ -14,9 +14,7 @@ public partial class Tank : RigidBody2D
 	private int rotation_counter;
 	private float rotation_stepsize = 0.0f;
 	private bool rotating = false;
-
 	
-	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
 		target = Position;
@@ -45,7 +43,7 @@ public partial class Tank : RigidBody2D
 	{
 		base._IntegrateForces(state);
 	
-		// Handle rotating, if required
+		// Handle rotation, if required
 		if (rotating)
 		{
 			RotationDegrees += rotation_stepsize;
@@ -57,7 +55,7 @@ public partial class Tank : RigidBody2D
 			}
 		}
 
-		// Set our speed	
+		// Set our speed
 		LinearVelocity = Transform.X * 1 * speed;
 	}
 
