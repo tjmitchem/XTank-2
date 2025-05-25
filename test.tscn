@@ -1,6 +1,6 @@
 [gd_scene load_steps=13 format=4 uid="uid://cglyyvmlvb5xi"]
 
-[ext_resource type="Script" uid="uid://du2morr12nxb4" path="res://assets/scripts/Tank.cs" id="1_ppyta"]
+[ext_resource type="Script" uid="uid://dhsufo3bvb200" path="res://assets/scripts/tank.gd" id="1_ppyta"]
 [ext_resource type="Texture2D" uid="uid://dt3kuethis8ql" path="res://assets/tank-r90.png" id="2_6uqi0"]
 [ext_resource type="Texture2D" uid="uid://buejo464ks32g" path="res://assets/terrain/tiles-96.png" id="2_8uh7m"]
 [ext_resource type="Script" uid="uid://ct1xmxwlu51p" path="res://assets/scripts/Sprite.cs" id="3_ppyta"]
@@ -97,7 +97,6 @@ gravity_scale = 0.0
 linear_damp = 1.0
 angular_damp = 41.242
 script = ExtResource("1_ppyta")
-speed_multiplier = 40
 metadata/_edit_group_ = true
 
 [node name="sprite" type="Sprite2D" parent="tank"]
